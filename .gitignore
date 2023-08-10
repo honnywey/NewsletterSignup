@@ -1,6 +1,9 @@
 #ApiKeys
 config.js
 
+#Node Modules
+node_modules/
+
 # Logs
 logs
 *.log
