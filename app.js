@@ -1,8 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const request = require("request");
 const https = require("https");
-
+const config = require("./config");
 const app = express();
 
 app.use(express.static("public"));
@@ -32,11 +31,11 @@ app.post("/", function(req, res) {
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us18.api.mailchimp.com/3.0/lists/be7de78e60"
+    const url = "https://us18.api.mailchimp.com/3.0/" + config.listId;
 
     const options = {
         method: "POST",
-        auth: "luhan3:bd892f56386ebabb0bbb6b9aa298d429-us18"
+        auth: "luhan3:" + config.apiKey
     }
 
     const request = https.request(url, options, function (response) {
@@ -67,17 +66,6 @@ app.post("/success", function (req, res) {
 })
 
 
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT | 3000, function() {
     console.log("The server is running on port 3000.");
 })
-
-/* app.listen(3000, function() {
-    console.log("The server is running on port 3000.");
-}) */
-
-
-//API KEY
-// bd892f56386ebabb0bbb6b9aa298d429-us18
-
-//List ID
-// be7de78e60
