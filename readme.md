@@ -20,9 +20,22 @@ The **Newsletter Signup Page** demonstrates how to build a simple and functional
 
 ## How to Use
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file in a web browser to access the newsletter signup page.
-3. Fill out the form and click the "Subscribe" button to experience the form validation and API integration.
+1. Install Node.js:
+   - Visit the official Node.js website: https://nodejs.org/
+   - Download and install Node.js version 16.18.1 or later.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory.
+4. Install project dependencies.
+5. Replace API Keys and IDs:
+- Open the `config.js` file.
+- Replace `YOUR_MAILCHIMP_API_KEY` with your actual Mailchimp API key.
+- Replace `YOUR_MAILCHIMP_LIST_ID` with your actual Mailchimp list ID.
+6. Add sensitive files to .gitignore:
+- Edit the `.gitignore` file to ensure sensitive files like `config.js` and other API-related files are not pushed to the repository.
+7. Run the Application:
+8. Open your web browser and access the newsletter signup page:
+9. Fill out the form and click the "Subscribe" button to experience the form validation and API integration.
+
 
 ## Technologies Used
 
