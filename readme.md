@@ -30,11 +30,9 @@ The **Newsletter Signup Page** demonstrates how to build a simple and functional
    - Open the `config.js` file.
    - Replace `YOUR_MAILCHIMP_API_KEY` with your actual Mailchimp API key.
    - Replace `YOUR_MAILCHIMP_LIST_ID` with your actual Mailchimp list ID.
-6. Add sensitive files to .gitignore:
-   - Edit the `.gitignore` file to ensure sensitive files like `config.js` and other API-related files are not pushed to the repository.
-7. Run the Application:
-8. Open your web browser and access the newsletter signup page:
-9. Fill out the form and click the "Subscribe" button to experience the form validation and API integration.
+6. Run the Application:
+7. Open your web browser and access the newsletter signup page:
+8. Fill out the form and click the "Subscribe" button to experience the form validation and API integration.
 
 
 ## Technologies Used
