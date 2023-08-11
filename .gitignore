@@ -4,6 +4,9 @@ config.js
 #Node Modules
 node_modules/
 
+#Heroku
+Procfile
+
 # Logs
 logs
 *.log
